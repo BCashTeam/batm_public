@@ -26,6 +26,7 @@ import java.util.List;
 public class Currencies {
 
     public static final String BTC = "BTC";
+	public static final String BCASH = "BCASH";
     public static final String BCH = "BCH"; //Bitcoin Cash
     public static final String BTCP = "BTCP"; //Bitcoin Private
     public static final String BTX = "BTX"; //BitCore
@@ -136,6 +137,7 @@ public class Currencies {
     static {
         List<String> crypto = new ArrayList<>();
         crypto.add(BTC);
+		crypto.add(BCASH);
         crypto.add(BCH);
         crypto.add(BTCP);
         crypto.add(BTX);

@@ -124,7 +124,28 @@
         <cryptologo cryptocurrency="BTC" file="btc.png"/>
         <cryptologo cryptocurrency="BTC" file="btc.svg"/>
     </extension>
-    <extension class="com.generalbytes.batm.server.extensions.extra.bitcoincash.BitcoinCashExtension">
+    <extension class="com.generalbytes.batm.server.extensions.extra.bcash.BCashExtension" >
+        <wallet prefix="bcashd" name="bcashd">
+            <param name="protocol" />
+            <param name="user" />
+            <param name="password" />
+            <param name="host" />
+            <param name="port" />
+            <param name="accountname" />
+            <cryptocurrency>BCASH</cryptocurrency>
+        </wallet>
+        <ratesource prefix="cdbcash" name="Cryptodiggers" >
+            <cryptocurrency>BCASH</cryptocurrency>
+        </ratesource>
+        <ratesource prefix="bcashfix" name ="Fix Price" >
+            <param name="price" />
+            <cryptocurrency>BCASH</cryptocurrency>
+            <help>USD is default fiat currency.</help>
+        </ratesource>
+        <cryptologo cryptocurrency="BCASH" file="bcash.png"/>
+        <cryptologo cryptocurrency="BCASH" file="bcash.svg"/>
+    </extension>
+	<extension class="com.generalbytes.batm.server.extensions.extra.bitcoincash.BitcoinCashExtension">
         <wallet prefix="bitcoincashd" name="BitcoinABC/BitcoinClassic Cash Core - bitcoind" >
             <param name="protocol" />
             <param name="user" />
@@ -496,7 +517,7 @@
         </ratesource>
         <cryptologo cryptocurrency="Burst" file="burst.png"/>
     </extension>
-     <extension class="com.generalbytes.batm.server.extensions.extra.pac.PacExtension" >
+    <extension class="com.generalbytes.batm.server.extensions.extra.pac.PacExtension" >
         <wallet prefix="paccoind" name="PACcoin">
             <param name="protocol" />
             <param name="user" />
